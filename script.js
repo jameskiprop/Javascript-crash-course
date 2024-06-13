@@ -126,5 +126,4 @@ const todoCompleted = todos
   .map(function (todo) {
     return todo.text;
   });
-
 console.log(todoCompleted);
