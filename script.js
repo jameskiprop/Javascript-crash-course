@@ -127,3 +127,80 @@ const todoCompleted = todos
     return todo.text;
   });
 console.log(todoCompleted);
+
+//conditionals
+
+// const x = "6";
+
+// if (x == 10) {
+//   console.log("x is equal to 10");
+// } else if (x < 10) {
+//   console.log("x is less than 10");
+// } else {
+//   console.log("x is greater than 10");
+// }
+
+//double conditionals
+
+// const x = 4;
+// const y = 15;
+
+// if (x > 5 || y > 10) {
+//   console.log("x is more than 5 or y is more than 10");
+// }
+
+//ternary operator
+
+const x = 12;
+
+const color = x > 10 ? "red" : "blue";
+
+console.log(color);
+
+//switch
+
+switch (color) {
+  case "red":
+    console.log("color is red");
+    break;
+  case "blue":
+    console.log("color is blue");
+    break;
+  default:
+    console.log("color is NOT red or blue");
+    break;
+}
+
+// functions
+
+function addNums(num1, num2) {
+  console.log(num1 + num2);
+}
+addNums(5, 4); //calling the function
+
+function addNums(num1 = 1, num2 = 2) {
+  return num1 + num2;
+}
+console.log(addNums(5, 5));
+
+// const addNums = (num1) => num1 + 5;
+
+// console.log(addNums(5));
+
+//OOP
+//constructor function
+function Person(firstName, lastName, dob) {
+  this.firstName = firstName; //When used within a constructor function, this refers to the newly created instance of the object.
+  this.lastName = lastName;
+  this.dob = new Date(dob); //storing the dob as a date object
+}
+this.getFullName = function () {
+  return this.dob.getFullYear;
+};
+//instantiate object
+const person1 = new Person("James", "Kiprop", "6-04-2001");
+const person2 = new Person("Quincy", "Jones", "8-07-1980");
+const person3 = new Person("Joy", "Wangecii", "6-08-2002");
+
+console.log(person1.dob()); // ()are used to immediately invoke a function
+console.log(person1.dob());
